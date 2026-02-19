@@ -486,6 +486,91 @@ nav {
 }
 
 /* ============================================
+   Members
+   ============================================ */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 24px;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: default;
+}
+
+.member-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--border-accent);
+    overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.member-card:hover .member-avatar {
+    border-color: var(--purple-core);
+    box-shadow: 0 0 20px rgba(123, 47, 255, 0.4);
+}
+
+.member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Fallback initials avatar (shown when GitHub img fails) */
+.member-avatar-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--purple-soft);
+    background: var(--bg-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Anonymous avatar */
+.member-avatar-anon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-tertiary);
+    color: var(--text-muted);
+}
+
+.member-card.member-anon:hover .member-avatar {
+    border-color: var(--border-accent);
+    box-shadow: none;
+}
+
+.member-name {
+    font-size: 13px;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.member-card:hover .member-name {
+    color: var(--purple-soft);
+}
+
+.member-card.member-anon:hover .member-name {
+    color: var(--text-muted);
+}
+
+/* ============================================
    Social
    ============================================ */
 .social-grid {
