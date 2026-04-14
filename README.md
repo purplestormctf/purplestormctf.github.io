@@ -1,6 +1,6 @@
 # purplestorm
 
-We are an open cybersecurity community for everyone, built around CTF platforms like Hack The Box and Vulnlab. From beginners to people who have been working in cybersecurity for years, everyone is welcome.
+We are an open cybersecurity community for everyone, built around CTF platforms like Hack The Box. From beginners to people who have been working in cybersecurity for years, everyone is welcome.
 
 If you're looking for people to play CTFs with, improve your skills, exchange knowledge, and learn together with others who share the same passion for cybersecurity, you are more than welcome to join us.
 
